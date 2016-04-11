@@ -2,11 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>EP-FC Filtered Collection Module</title>
 </head>
 <body>
     <main>
-        
+        <div class="ep-fc-filtered-collection">
+            <div class="ep-fc-filters">
+                <form>
+                    <fieldset id="ep-fc-filter01" class="ep-ec-filter">
+                        <legend>Фильтр 01</legend>
+                    </fieldset>
+                    <button type="submit">Применить</button>
+                    <button type="reset">Сбросить</button>
+                </form>
+            </div>
+            <div class="ep-fc-collection">
+                <div class="ep-fc-collection-header">
+                    <div class="ep-fc-collection-sort">
+                        <ul>
+                            <li><a href="#ep-fc-sort-by-name"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ep-fc-collection-main">
+                    <div class="ep-fc-items">
+                        <div id="ep-fc-item01" class="ep-fc-item">
+                        </div>
+                        <div id="ep-fc-item02" class="ep-fc-item">
+                        </div>
+                        <div id="ep-fc-item03" class="ep-fc-item">
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-fc-collection-footer">
+                    <div class="ep-fc-collection-nav">
+                        <ul>
+                            <li><a href="#ep-fc-collection-page01"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#ep-fc-show12">12</a></li>
+                            <li><a href="#ep-fc-show24">24</a></li>
+                            <li><a href="#ep-fc-showAll">Все</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="ep-fc-templates">
+        <div class="ep-fc-template-filter">
+        </div>
+        <div class="ep-fc-template-item">
+        </div>
+    </div>
 </body>
 </html>

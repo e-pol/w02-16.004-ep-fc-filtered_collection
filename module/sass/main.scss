@@ -2,6 +2,9 @@
 @import 'helpers/_mixins';
 @import 'base/_reset';
 @import 'base/_grid';
+@import 'base/_base';
 @import 'base/_typography';
 @import 'layout/_filters';
-@import 'layout/_colection';
+@import 'layout/_collection';
+@import 'components/_sort';
+@import 'components/_show';

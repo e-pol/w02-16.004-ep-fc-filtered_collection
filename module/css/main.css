@@ -1,57 +1,269 @@
-/*
-Error: File to import not found or unreadable: layout/_colection.
-       Load path: E:/W-02_Web_DD/2016/w02-16.004 EP-FC Filtered Collection/module/sass
-        on line 7 of sass/main.scss
-
-2: @import 'helpers/_mixins';
-3: @import 'base/_reset';
-4: @import 'base/_grid';
-5: @import 'base/_typography';
-6: @import 'layout/_filters';
-7: @import 'layout/_colection';
-
-Backtrace:
-sass/main.scss:7
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/* Screen breakpoint */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: layout/_colection.\A        Load path: E:/W-02_Web_DD/2016/w02-16.004 EP-FC Filtered Collection/module/sass\A         on line 7 of sass/main.scss\A \A 2: @import 'helpers/_mixins';\A 3: @import 'base/_reset';\A 4: @import 'base/_grid';\A 5: @import 'base/_typography';\A 6: @import 'layout/_filters';\A 7: @import 'layout/_colection';"; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.ep-fc-filtered-collection {
+  margin: 0 auto; }
+  @media (min-width: 960px) {
+    .ep-fc-filtered-collection {
+      max-width: 960px; } }
+  @media (min-width: 1224px) {
+    .ep-fc-filtered-collection {
+      max-width: 1224px; } }
+  @media (min-width: 1824px) {
+    .ep-fc-filtered-collection {
+      max-width: 1824px; } }
+  .ep-fc-filtered-collection .ep-fc-filters {
+    width: 97.39583333%;
+    margin: 1.302083333%; }
+    @media (min-width: 768px) {
+      .ep-fc-filtered-collection .ep-fc-filters {
+        float: left;
+        width: 31.510416666%;
+        margin: 1.302083333%; } }
+    @media (min-width: 960px) {
+      .ep-fc-filtered-collection .ep-fc-filters {
+        width: 24.183006535%;
+        margin: 0.816993464%; } }
+    @media (min-width: 1224px) {
+      .ep-fc-filtered-collection .ep-fc-filters {
+        width: 19.517543859%;
+        margin: 0.548245614%; } }
+  .ep-fc-filtered-collection .ep-fc-collection {
+    width: 97.39583333%;
+    margin: 1.302083333%; }
+    @media (min-width: 768px) {
+      .ep-fc-filtered-collection .ep-fc-collection {
+        float: right;
+        width: 63.39583333%;
+        margin: 1.0416666%; } }
+    @media (min-width: 960px) {
+      .ep-fc-filtered-collection .ep-fc-collection {
+        width: 72.549019607%;
+        margin: 0.816993464%; } }
+    @media (min-width: 1224px) {
+      .ep-fc-filtered-collection .ep-fc-collection {
+        width: 78.2894733684%;
+        margin: 0.548245614%; } }
+    @media (max-width: 519px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        width: 96.153846153%;
+        margin: 1.923076923%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:after {
+          content: " ";
+          display: table;
+          clear: both; } }
+  @media (max-width: 519px) and (min-width: 320px) and (max-width: 519px) {
+    .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item .ep-fc-item-image {
+      display: inline-block;
+      float: left;
+      width: 46.153846153%;
+      margin-right: 3.846153846%; } }
+
+    @media (min-width: 520px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        float: left;
+        width: 47.39583333%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:nth-child(2n+1) {
+          margin-right: 2.60416666%; } }
+    @media (min-width: 768px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        width: 48.3713355%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:nth-child(2n+1) {
+          margin-right: 3.25732899%; } }
+    @media (min-width: 960px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        width: 31.756756756%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:not(:nth-child(3n)) {
+          margin-right: 2.252252252%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:nth-child(3n) {
+          margin-right: 0; } }
+    @media (min-width: 1224px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        width: 23.949579831%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:not(:nth-child(4n)) {
+          margin-right: 1.400560224%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:nth-child(4n) {
+          margin-right: 0; } }
+    @media (min-width: 1824px) {
+      .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+        width: 15.476190476%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:not(:nth-child(6n)) {
+          margin-right: 1.400560224%; }
+        .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:nth-child(6n) {
+          margin-right: 0; } }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ep-fc-filtered-collection a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8); }
+
+body {
+  font-size: 100%; }
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5; }
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */ }
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */ } }
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */ }
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125; } }
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */ } }
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */ }
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25; } }
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */ }
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25; } }
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111; }
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */ } }
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */ }
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */ } }
+.ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+  padding: 1em; }
+  .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item .ep-fc-item-image {
+    max-width: 100%; }
+  .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:hover {
+    background-color: burlywood; }
+
+.ep-fc-collection-header {
+  clear: both; }
+  .ep-fc-collection-header .ep-fc-collection-sort ul li {
+    display: inline-block;
+    margin: 1.0em; }
+    .ep-fc-collection-header .ep-fc-collection-sort ul li a {
+      border-radius: 0.25em;
+      padding: 0.25em 1.0em 0.25em 1.0em;
+      background-color: burlywood; }
+
+.ep-fc-collection-footer {
+  clear: both; }
+  .ep-fc-collection-footer .ep-fc-collection-show {
+    text-align: center; }
+    .ep-fc-collection-footer .ep-fc-collection-show .ep-fc-collection-show-type li {
+      margin-left: 0.25em;
+      margin-right: 0.25em; }
+    .ep-fc-collection-footer .ep-fc-collection-show ul li {
+      display: inline-block;
+      margin: 1.0em; }
+      .ep-fc-collection-footer .ep-fc-collection-show ul li a {
+        border-radius: 0.25em;
+        padding: 0.25em 1.0em 0.25em 1.0em;
+        background-color: burlywood; }
+
+/*# sourceMappingURL=main.css.map */

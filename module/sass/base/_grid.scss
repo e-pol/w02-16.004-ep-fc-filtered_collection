@@ -1,1 +1,105 @@
-
+.ep-fc-filtered-collection {
+  margin: 0 auto;
+  @include mq-l-up {
+    max-width: $screen-l;
+  }
+  @include mq-xl-up {
+    max-width: $screen-xl;
+  }
+  @include mq-xxl {
+    max-width: $screen-xxl;
+  }
+  & .ep-fc-filters {
+    width: 97.39583333%;
+    margin: 1.302083333%;
+    @include mq-m-up {
+      float: left;
+      width: 31.510416666%;
+      margin: 1.302083333%;
+    }
+    @include mq-l-up {
+      width: 24.183006535%;
+      margin: 0.816993464%;
+    }
+    @include mq-xl-up {
+      width: 19.517543859%;
+      margin: 0.548245614%;
+    }
+  }
+  & .ep-fc-collection {
+    width: 97.39583333%;
+    margin: 1.302083333%;
+    @include mq-m-up {
+      float: right;
+      width: 63.39583333%;
+      margin: 1.0416666%;
+    }
+    @include mq-l-up {
+      width: 72.549019607%;
+      margin: 0.816993464%;
+    }
+    @include mq-xl-up {
+      width: 78.2894733684%;
+      margin: 0.548245614%;
+    }
+    & .ep-fc-item {
+      @include mq-s-down {
+        width: 96.153846153%;
+        margin: 1.923076923%;
+        &:after {
+          content: " ";
+          display: table;
+          clear: both;
+        }
+        & .ep-fc-item-image {
+          @include mq-xs {
+            display: inline-block;
+            float: left;
+            width: 46.153846153%;
+            margin-right: 3.846153846%;
+          }
+        }
+      }
+      @include mq-s-up {
+        float: left;
+        width: 47.39583333%;
+        &:nth-child(2n+1){
+          margin-right: 2.60416666%;
+        }
+      }
+      @include mq-m-up {
+        width: 48.3713355%;
+        &:nth-child(2n+1){
+          margin-right: 3.25732899%;
+        }
+      }
+      @include mq-l-up {
+        width: 31.756756756%;
+        &:not(:nth-child(3n)){
+          margin-right: 2.252252252%;
+        }
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+      }
+      @include mq-xl-up {
+        width: 23.949579831%;
+        &:not(:nth-child(4n)){
+          margin-right: 1.400560224%;
+        }
+        &:nth-child(4n){
+          margin-right: 0;
+        }
+      }
+      @include mq-xxl {
+        width: 15.476190476%;
+        &:not(:nth-child(6n)){
+          margin-right: 1.400560224%;
+        }
+        &:nth-child(6n){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

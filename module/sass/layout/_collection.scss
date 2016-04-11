@@ -1,1 +1,11 @@
-
+.ep-fc-filtered-collection .ep-fc-collection {
+  & .ep-fc-item {
+    padding: 1em;
+    & .ep-fc-item-image {
+      max-width: 100%;
+    }
+    &:hover {
+        background-color: burlywood;
+    }
+  }
+}

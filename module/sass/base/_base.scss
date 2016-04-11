@@ -1,0 +1,21 @@
+$black020: rgba(0, 0, 0, 0.2);
+$black040: rgba(0, 0, 0, 0.4);
+$black060: rgba(0, 0, 0, 0.6);
+$black080: rgba(0, 0, 0, 0.8);
+$black100: rgba(0, 0, 0, 1.0);
+
+$textMain: $black080;
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ep-fc-filtered-collection {
+  & a {
+    text-decoration: none;
+    color: $textMain;
+  }
+}
+

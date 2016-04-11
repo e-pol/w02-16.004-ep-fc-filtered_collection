@@ -1,0 +1,19 @@
+.ep-fc-collection-footer {
+  clear: both;
+  & .ep-fc-collection-show {
+    text-align: center;
+    & .ep-fc-collection-show-type li {
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
+    & ul li {
+      display: inline-block;
+      margin: 1.0em;
+      & a {
+        border-radius: 0.25em;
+        padding: 0.25em 1.0em 0.25em 1.0em;
+        background-color: burlywood;
+      }
+    }
+  }
+}

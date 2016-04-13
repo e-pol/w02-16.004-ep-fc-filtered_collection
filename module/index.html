@@ -8,10 +8,39 @@
 <body>
     <main>
         <div class="ep-fc-filtered-collection">
-            <div class="ep-fc-filters">
+            <div id="ep-fc-filters" class="ep-fc-filters">
                 <form>
-                    <fieldset id="ep-fc-filter01" class="ep-ec-filter">
-                        <legend>Фильтр 01</legend>
+                    <fieldset id="ep-fc-filter-type" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
+                        <legend>Тип</legend>
+                        <input type="checkbox" name="type" data-ep-fc-filter="compareOperator:=" value="house">Дом<br>
+                        <input type="checkbox" name="type"  data-ep-fc-filter="compareOperator:=" value="bath">Баня<br>
+                        <input type="checkbox" name="type"  data-ep-fc-filter="compareOperator:=" value="others">Прочее<br>
+                    </fieldset>
+                    <fieldset id="ep-fc-filter-area" data-ep-fc-filter-type="logicOperator:interval" class="ep-ec-filter">
+                        <legend>Площадь</legend>
+                        От<input type="number" name="area" data-ep-fc-filter="compareOperator:>=" value=0><br>
+                        До<input type="number" name="area" data-ep-fc-filter="compareOperator:<=" value=300><br>
+                    </fieldset>
+                    <fieldset id="ep-fc-filter-floors" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
+                        <legend>Этажи</legend>
+                        1<input type="checkbox" name="floors" data-ep-fc-filter="compareOperator:=" value=1>
+                        2<input type="checkbox" name="floors" data-ep-fc-filter="compareOperator:=" value=2>
+                        3<input type="checkbox" name="floors" data-ep-fc-filter="compareOperator:=" value=3>
+                    </fieldset>
+                    <fieldset id="ep-fc-filter-bedrooms" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
+                        <legend>Комнаты / спальни</legend>
+                        1<input type="checkbox" name="bedrooms" data-ep-fc-filter="compareOperator:=" value=1>
+                        2<input type="checkbox" name="bedrooms" data-ep-fc-filter="compareOperator:=" value=2>
+                        3<input type="checkbox" name="bedrooms" data-ep-fc-filter="compareOperator:=" value=3>
+                        4<input type="checkbox" name="bedrooms" data-ep-fc-filter="compareOperator:=" value=4>
+                        5<input type="checkbox" name="bedrooms" data-ep-fc-filter="compareOperator:=" value=5>
+                    </fieldset>
+                    <fieldset id="ep-fc-filter-technology" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
+                        <legend>Технология</legend>
+                        <input type="checkbox" name="technology" data-ep-fc-filter="compareOperator:=" value="Проф. брус">Профилированный брус<br>
+                        <input type="checkbox" name="technology" data-ep-fc-filter="compareOperator:=" value="Лафет">Лафет<br>
+                        <input type="checkbox" name="technology" data-ep-fc-filter="compareOperator:=" value="Газобетон">Газобетон<br>
+                        <input type="checkbox" name="technology" data-ep-fc-filter="compareOperator:=" value="Каркас">Каркас<br>
                     </fieldset>
                     <button type="submit">Применить</button>
                     <button type="reset">Сбросить</button>
@@ -24,7 +53,6 @@
                             <li><a href="#ep-fc-sort-by-area">площади</a></li>
                             <li><a href="#ep-fc-sort-by-name">названию</a></li>
                             <li><a href="#ep-fc-sort-by-tech">технологии</a></li>
-                            <li><a href="#ep-fc-sort-by-disable">сбросить</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,12 +90,17 @@
                         <td><%= area %>м2</td>
                     </tr>
                     <tr>
+                        <td>Технология</td>
+                        <td><%- technology %></td>
+                    </tr>
+
+                    <tr>
                         <td>Комнат</td>
                         <td><%= bedrooms %></td>
                     </tr>
                     <tr>
                         <td>Реализован</td>
-                        <td><% - realized %></td>
+                        <td><%- realized %></td>
                     </tr>
                 </table>
             </div>
@@ -80,6 +113,8 @@
     <script src="js/models/projectModel.js"></script>
     <script src="js/collections/projectsList.js"></script>
     <script src="js/views/projectView.js"></script>
+    <script src="js/views/filterView.js"></script>
+    <script src="js/views/filtersView.js"></script>
     <script src="js/views/projectsListView.js"></script>
     <script src="js/views/catalogView.js"></script>
     <script src="js/module.js"></script>

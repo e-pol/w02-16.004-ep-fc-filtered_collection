@@ -11,10 +11,10 @@ modules.ep_filtered_collection = modules.ep_filtered_collection || {};
 modules.ep_filtered_collection.ProjectModel = Backbone.Model.extend({
     defaults: {
         id: '',
-        title: 'Проект',
+        title: 'РџСЂРѕРµРєС‚',
         area: null,
         floors: null,
-        realized: 'неизвестно',
+        realized: 'РЅРµРёР·РІРµСЃС‚РЅРѕ',
         bedrooms: 0,
         technology: null,
         imageSrc: null

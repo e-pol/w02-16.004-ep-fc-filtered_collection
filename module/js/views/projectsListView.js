@@ -17,6 +17,25 @@ modules.ep_filtered_collection.ProjectsListView = Backbone.View.extend({
         this.render(this.collection, this);
     },
 
+    filterList: function(filters){
+        var collection = this.initialCollection.clone(),
+            filteredOutProjects = [];
+        console.log('filtering list');
+        filters.forEach(function(filter){
+            collection.each(function(project){
+                filteredOutProjects = collection.models.filter(function(project){
+                    return !(filter(project));
+                });
+            });
+            if (filteredOutProjects.length > 0){
+                collection.remove(filteredOutProjects);
+            }
+        }, this);
+
+        this.collection = collection;
+        this.render();
+    },
+
     render: function(collection, context){
         var collection = collection || this.collection,
             context = context || this;
@@ -55,6 +74,11 @@ modules.ep_filtered_collection.ProjectsListView = Backbone.View.extend({
 
     renderProjectsDisableSorted: function(){
         this.collection = this.initialCollection.clone();
+        this.render();
+    },
+
+    resetList: function(){
+        this.collection = this.initialCollection;
         this.render();
     }
 });

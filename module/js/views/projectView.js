@@ -13,6 +13,10 @@ modules.ep_filtered_collection.ProjectView = Backbone.View.extend({
     className: 'ep-fc-item',
     template: _.template( $('#ep-fc-project-template').html() ),
 
+    initialize: function(){
+
+    },
+
     render: function(){
         this.el.id = 'ep-fc-' + this.model.get('id');
         this.$el.html( this.template (this.model.toJSON()) );

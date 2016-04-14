@@ -1,12 +1,13 @@
 .ep-fc-collection-header {
   clear: both;
+  padding-left: 0.8em;
   & .ep-fc-collection-sort {
     & ul li {
       display: inline-block;
-      margin: 1.0em;
+      margin: 0.25em 0.75em 1.0em 0.75em;
       & a {
         border-radius: 0.25em;
-        padding: 0.25em 1.0em 0.25em 1.0em;
+        padding: 0.125em 1.0em 0.25em 1.0em;
         background-color: burlywood;
       }
     }

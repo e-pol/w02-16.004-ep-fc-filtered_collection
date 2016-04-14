@@ -8,7 +8,7 @@
 <body>
     <main>
         <div class="ep-fc-filtered-collection">
-            <div id="ep-fc-filters" class="ep-fc-filters">
+            <div id="ep-fc-filters" class="ep-fc-filters ep-fc-hidden">
                 <form>
                     <fieldset id="ep-fc-filter-type" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
                         <legend>Тип</legend>
@@ -16,10 +16,10 @@
                         <input type="checkbox" name="type"  data-ep-fc-filter="compareOperator:=" value="bath">Баня<br>
                         <input type="checkbox" name="type"  data-ep-fc-filter="compareOperator:=" value="others">Прочее<br>
                     </fieldset>
-                    <fieldset id="ep-fc-filter-area" data-ep-fc-filter-type="logicOperator:interval" class="ep-ec-filter">
+                    <fieldset id="ep-fc-filter-area" data-ep-fc-filter-type="logicOperator:interval" class="ep-ec-filter ep-ec-filter-number">
                         <legend>Площадь</legend>
-                        От<input type="number" name="area" data-ep-fc-filter="compareOperator:>=" value=0><br>
-                        До<input type="number" name="area" data-ep-fc-filter="compareOperator:<=" value=300><br>
+                        <span>От</span><input type="number" name="area" data-ep-fc-filter="compareOperator:>=" value=0><br>
+                        <span>До</span><input type="number" name="area" data-ep-fc-filter="compareOperator:<=" value=300><br>
                     </fieldset>
                     <fieldset id="ep-fc-filter-floors" data-ep-fc-filter-type="logicOperator:is" class="ep-ec-filter">
                         <legend>Этажи</legend>
@@ -46,7 +46,7 @@
                     <button type="reset">Сбросить</button>
                 </form>
             </div>
-            <div class="ep-fc-collection">
+            <div class="ep-fc-collection ep-fc-hidden">
                 <div class="ep-fc-collection-header">
                     <div class="ep-fc-collection-sort">
                         <ul>Сортировать по:
@@ -74,6 +74,90 @@
                             <li><a href="#ep-fc-show-all-items">Все</a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="ep-fc-item-page">
+                <h2 class="ep-fc-item-page-heading">Проект ПБ-16.001</h2>
+                <div class="ep-fc-img-viewer">
+                    <div class="ep-fc-img-viewer-show">
+                        <img src="data/project_pb-16_001/project_pb-16_001.jpg">
+                    </div>
+                    <div class="ep-fc-img-viewer-thumbnails">
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                        <a href=""><img src="data/project_pb-16_001/project_pb-16_001.jpg"></a>
+                    </div>
+                </div>
+                <div class="ep-fc-project-description">
+                    <h3>Основные характеристики</h3>
+                    <table>
+                        <tr>
+                            <td>Код проекта</td>
+                            <td>ПБ-16.001</td>
+                        </tr>
+                        <tr>
+                            <td>Общая площадь</td>
+                            <td>200м2</td>
+                        </tr>
+                        <tr>
+                            <td>Технология</td>
+                            <td>Профилированный брус</td>
+                        </tr>
+                        <tr>
+                            <td>Реализован</td>
+                            <td>2016-Iкв</td>
+                        </tr>
+                        <tr>
+                            <td>Описание</td>
+                            <td class="ep-fc-table-description">Проект двухэтажного дома из бруса профилированного 200х200мм. Пригоден для постоянного пребывания. Гостиная и кухня-столовая объединены в общее пространство.</td>
+                        </tr>
+                    </table>
+                    <button>Стоимость разработки проекта</button>
+                    <button>Заказать проект</button>
+                </div>
+                <div class="ep-fc-project-description">
+                    <h3>Объемы конструкций</h3>
+                    <table>
+                        <tr>
+                            <td>Площадь стен</td>
+                            <td>350м2</td>
+                        </tr>
+                        <tr>
+                            <td>Площадь фасадов</td>
+                            <td>190м2</td>
+                        </tr>
+                        <tr>
+                            <td>Остекление</td>
+                            <td>20м2</td>
+                        </tr>
+                        <tr>
+                            <td>Полы 1й эт</td>
+                            <td>100м2</td>
+                        </tr>
+                        <tr>
+                            <td>Полы 2й эт</td>
+                            <td>100м2</td>
+                        </tr>
+                        <tr>
+                            <td>Кровля</td>
+                            <td>200м2</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ep-fc-project-description">
+                    <h3>История реализации</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat purus tincidunt, pellentesque massa quis, molestie nisi.</p>
+                    <p>Sed finibus auctor augue ac tempus. In hac habitasse platea dictumst. Suspendisse ut lorem a nisi maximus tincidunt vel ut arcu.</p>
+                    <p>Quisque eu lobortis libero, ut aliquam libero. Pellentesque porttitor scelerisque nisi, in lobortis tortor mattis euismod. Nunc eget metus ut elit euismod mollis eu eu orci.</p>
+                    <p>Phasellus id urna luctus, fermentum arcu eget, facilisis diam. Vivamus tempor, tortor ut interdum mattis, ex ligula vestibulum lacus, et finibus mauris orci ac purus.</p>
+                    <p>Integer semper lacus augue, quis hendrerit est molestie ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. In a iaculis nisl.</p>
+                    <p>Nulla eget felis et magna consequat placerat dictum sed dui. Donec convallis mauris ac erat vulputate lacinia. Donec ut euismod arcu, ac pellentesque ipsum.</p>
+
                 </div>
             </div>
         </div>

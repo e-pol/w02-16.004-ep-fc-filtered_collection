@@ -146,6 +146,9 @@ table {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8); }
 
+.ep-fc-hidden {
+  display: none; }
+
 body {
   font-size: 100%; }
 
@@ -234,25 +237,116 @@ blockquote {
     /* 24px / 16px = */
     line-height: 1.45833333;
     /* 35px / 24px */ } }
-.ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+.ep-fc-filtered-collection .ep-fc-filters {
+  background-color: darkgoldenrod;
+  border-radius: 0.75em;
+  color: lavender;
   padding: 1em; }
+  .ep-fc-filtered-collection .ep-fc-filters .ep-ec-filter {
+    border: 2px solid ghostwhite;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.75em; }
+    .ep-fc-filtered-collection .ep-fc-filters .ep-ec-filter legend {
+      color: aliceblue;
+      padding-right: 0.375em;
+      padding-left: 0.25em; }
+    .ep-fc-filtered-collection .ep-fc-filters .ep-ec-filter input {
+      margin-bottom: 0.75em; }
+    .ep-fc-filtered-collection .ep-fc-filters .ep-ec-filter.ep-ec-filter-number span {
+      display: inline-block;
+      width: 10%;
+      margin-right: 0.5em; }
+    .ep-fc-filtered-collection .ep-fc-filters .ep-ec-filter.ep-ec-filter-number input {
+      text-align: center;
+      width: 5em; }
+  .ep-fc-filtered-collection .ep-fc-filters input:hover {
+    cursor: pointer; }
+  .ep-fc-filtered-collection .ep-fc-filters button {
+    width: 80%;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    margin: 0 10% 0.75em 10%; }
+    .ep-fc-filtered-collection .ep-fc-filters button:hover {
+      cursor: pointer;
+      background-color: bisque; }
+
+.ep-fc-filtered-collection .ep-fc-collection .ep-fc-item {
+  padding: 1em;
+  border-radius: 0.5em; }
   .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item .ep-fc-item-image {
     max-width: 100%; }
   .ep-fc-filtered-collection .ep-fc-collection .ep-fc-item:hover {
     background-color: burlywood; }
 
+.ep-fc-filtered-collection .ep-fc-item-page {
+  max-width: 1224px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.8); }
+  .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-item-page-heading {
+    margin-left: 0.816993464%; }
+  .ep-fc-filtered-collection .ep-fc-item-page img {
+    max-width: 100%; }
+  .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-img-viewer:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-img-viewer .ep-fc-img-viewer-show {
+    width: 64.488017429%;
+    margin: 0.816993464%;
+    float: left; }
+  .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-img-viewer .ep-fc-img-viewer-thumbnails {
+    width: 32.189542483%;
+    margin: 0.816993464%;
+    float: right; }
+    .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-img-viewer .ep-fc-img-viewer-thumbnails a {
+      display: inline-block;
+      width: 47.461928934%;
+      padding: 0 1.0em 1.0em 1.0em;
+      margin-bottom: 0.5em; }
+      .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-img-viewer .ep-fc-img-viewer-thumbnails a:nth-child(odd) {
+        margin-right: 1.633986928%; }
+  .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description {
+    width: 31.699346405%;
+    margin: 0.816993464%;
+    border-radius: 0.5em;
+    float: left; }
+    .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description h3 {
+      padding: 0.25em;
+      background-color: lavender; }
+    .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description table {
+      width: 100%; }
+      .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description table tr {
+        background-color: cornsilk; }
+        .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description table tr:nth-child(odd) {
+          background-color: antiquewhite; }
+        .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description table tr td {
+          padding: 0.5em;
+          width: 50%; }
+    .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description p {
+      margin: 0.5em 0 0.5em 0;
+      text-indent: 1em; }
+    .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description button {
+      margin: 0.375em 10% 0.375em 10%;
+      width: 80%;
+      padding: 0.5em; }
+      .ep-fc-filtered-collection .ep-fc-item-page .ep-fc-project-description button:first-of-type {
+        margin-top: 1.0em; }
+
 .ep-fc-collection-header {
-  clear: both; }
+  clear: both;
+  padding-left: 0.8em; }
   .ep-fc-collection-header .ep-fc-collection-sort ul li {
     display: inline-block;
-    margin: 1.0em; }
+    margin: 0.25em 0.75em 1.0em 0.75em; }
     .ep-fc-collection-header .ep-fc-collection-sort ul li a {
       border-radius: 0.25em;
-      padding: 0.25em 1.0em 0.25em 1.0em;
+      padding: 0.125em 1.0em 0.25em 1.0em;
       background-color: burlywood; }
 
 .ep-fc-collection-footer {
-  clear: both; }
+  clear: both;
+  padding-top: 2.0em; }
   .ep-fc-collection-footer .ep-fc-collection-show {
     text-align: center; }
     .ep-fc-collection-footer .ep-fc-collection-show .ep-fc-collection-show-type li {

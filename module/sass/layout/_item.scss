@@ -1,0 +1,72 @@
+.ep-fc-filtered-collection .ep-fc-item-page {
+  max-width: 1224px;
+  margin: 0 auto;
+  color: $textMain;
+  & .ep-fc-item-page-heading {
+    margin-left: 0.816993464%;
+  }
+  & img {
+    max-width: 100%;
+  }
+  & .ep-fc-img-viewer {
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    & .ep-fc-img-viewer-show {
+      width: 64.488017429%;
+      margin: 0.816993464%;
+      float: left;
+    }
+    & .ep-fc-img-viewer-thumbnails {
+      width: 32.189542483%;
+      margin: 0.816993464%;
+      float: right;
+      & a {
+        display: inline-block;
+        width: 47.461928934%;
+        padding: 0 1.0em 1.0em 1.0em;
+        margin-bottom: 0.5em;
+        &:nth-child(odd){
+          margin-right: 1.633986928%;
+        }
+      }
+    }
+  }
+  & .ep-fc-project-description {
+    width: 31.699346405%;
+    margin: 0.816993464%;
+    border-radius: 0.5em;
+    float: left;
+    & h3 {
+      padding: 0.25em;
+      background-color: lavender;
+    }
+    & table {
+      width: 100%;
+      & tr {
+        background-color: cornsilk;
+        &:nth-child(odd){
+          background-color: antiquewhite;
+        }
+        & td {
+          padding: 0.5em;
+          width: 50%;
+        }
+      }
+    }
+    & p {
+      margin: 0.5em 0 0.5em 0;
+      text-indent: 1em;
+    }
+    & button {
+      margin: 0.375em 10% 0.375em 10%;
+      &:first-of-type {
+        margin-top: 1.0em;
+      }
+      width: 80%;
+      padding: 0.5em;
+    }
+  }
+}

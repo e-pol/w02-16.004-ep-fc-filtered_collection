@@ -1,2 +1,46 @@
 .ep-fc-filtered-collection .ep-fc-filters {
+  background-color: darkgoldenrod;
+  border-radius: 0.75em;
+  color: lavender;
+  padding: 1em;
+  & .ep-ec-filter {
+    border: 2px solid ghostwhite;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.75em;
+    & legend {
+      color: aliceblue;
+      padding-right: 0.375em;
+      padding-left: 0.25em;
+    }
+    & input {
+      margin-bottom: 0.75em;
+    }
+    &.ep-ec-filter-number {
+      & span {
+        display: inline-block;
+        width: 10%;
+        margin-right: 0.5em;
+      }
+      & input {
+        text-align: center;
+        width: 5em;
+      }
+    }
+  }
+  & input {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & button {
+    width: 80%;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    margin: 0 10% 0.75em 10%;
+    &:hover{
+      cursor: pointer;
+      background-color: bisque;
+    }
+  }
 }
